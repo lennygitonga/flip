@@ -26,7 +26,7 @@ function CharacterDetail() {
 
   return (
     <div>
-      {/* BACK BUTTON */}
+     
       <button
         onClick={() => navigate('/dashboard/characters')}
         className="text-slate-400 hover:text-emerald-400 text-sm mb-6 flex items-center gap-2 transition-colors"
@@ -34,7 +34,7 @@ function CharacterDetail() {
         ← Back to Characters
       </button>
 
-      {/* CHARACTER HEADER */}
+      
       <div className="flex gap-6 mb-8 bg-slate-900 border border-slate-800 rounded-xl p-6">
         <img
           src={character.image}
@@ -61,7 +61,7 @@ function CharacterDetail() {
         </div>
       </div>
 
-      {/* TABS */}
+     
       <div className="flex gap-2 mb-6">
         <NavLink
           to="info"
@@ -85,7 +85,7 @@ function CharacterDetail() {
         </NavLink>
       </div>
 
-      {/* TAB CONTENT */}
+     
       <Outlet context={character} />
     </div>
   )
